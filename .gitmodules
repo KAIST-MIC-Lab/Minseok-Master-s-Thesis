@@ -4,3 +4,6 @@
 [submodule "SafeRL"]
 	path = SafeRL
 	url = git@github.com:seominseok00/SafeRL.git
+[submodule "Masters-Thesis"]
+	path = Masters-Thesis
+	url = git@github.com:seominseok00/Masters-Thesis.git
