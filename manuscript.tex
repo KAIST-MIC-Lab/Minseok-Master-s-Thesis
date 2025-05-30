@@ -1,0 +1,158 @@
+% ********************************************
+%
+%   Dear Authors,
+% 
+%   Please, read the following comments in Preset settings and adjust the settings according to your needs.
+%   Please, feel free to add more packages or macros if needed.
+%   Details of the pre-defined packages, symbols and macros can be found in the submodule "template". (See PDF files.)
+%   If you finished the adjustments, you can remove the comments for a clean document.
+% 
+%   Any questions or contributions are welcome.
+%   Please, contact to the author.
+%   Enjoy your writing.
+%
+%                               Myeongseok Ryu
+%  	    				dding_98@gm.gist.ac.kr
+%                                  09.Feb.2025
+%
+% ********************************************
+
+% ********************************************
+% This project is highly ispired by the work of LMRES Lab, Hochschule München.
+% Thank you very much my dear friend, Niklas Monzen, for your kind support.
+% ********************************************
+
+% ============================================
+%         Preset 1. Document Type
+% ============================================
+\documentclass[conference]{IEEEtran}
+% \documentclass[lettersize,journal]{IEEEtran}
+
+% THIS IS NEEDED FOR FINAL SUBMISSION
+\IEEEoverridecommandlockouts 
+% This command is only needed if you want to use the \thanks commands  
+%\overrideIEEEmargins 
+% Needed to meet printer requirements.
+%---------------------------------------------------------------------------- 
+
+% ============================================
+%         Preset 2. Local Path
+% ============================================
+% When you create "figures" or "movies" directories in the "src" (source code) directory, the file name including path can be long.
+% To avoid this, and to make it easier to adjust, you can define the alias for the path.
+% The examples are provided below.
+
+\newcommand*{\FIGURESPATH}{./figures}
+% \newcommand*{\SIMFIGURESPATH}{./src/script_simulation/figures}
+% \newcommand*{\SLXFIGURESPATH}{./src/simulink_simulation/figures}
+% \newcommand*{\MOVIESPATH}{./movies}
+
+% ============================================
+%         Preset 3. Pre-defined Settings
+% ============================================
+% PLEASE DO NOT ADD OR REMOVE PACKAGES IN THE SUBMODULE LOCALLY!
+% CONTACT THE AUTHOR FOR ADJUSTMENTS.
+%
+% The packages are pre-defined in the submodule "Template".
+% If you need more packages, please add them after using pre-defined packages.
+
+\def\pub{false} % true for publication, false for draft
+\newcommand*{\template}{template}
+\input{\template/preamble/preamble_conf.tex}
+
+% ============================================
+%     Preset 4. Additional Corrections
+% ============================================
+% correct bad hyphenation here
+% \hyphenation{op-tical net-works semi-conduc-tor}
+% \pagestyle{empty}
+
+% ============================================
+%               TITLE and AUTHORS
+% ============================================
+\newcommand{\tit}{Example Title of Conference Template}
+\begin{document}
+\title{
+	\tit
+    % Example Title of Template
+% {\footnotesize \textsuperscript{*}Note: Sub-titles are not captured for https://ieeexplore.ieee.org  and
+% should not be used}
+    \thanks{
+        This work was supported by my 10 fingers and Macbook Air M1.
+    }
+}
+
+\author{
+    \IEEEauthorblockN{1\textsuperscript{st} Myeongseok Ryu}
+    \IEEEauthorblockA{\textit{School of Mechanical and Robotics Engineering} \\
+    \textit{Gwangju Institute of Science and Technology}\\
+    Gwangju, Republic of Korea \\
+    dding\_98@gm.gist.ac.kr}
+\and
+    \IEEEauthorblockN{2\textsuperscript{nd} Niklas Monzen}
+    \IEEEauthorblockA{\textit{Laboratory for Mechatronic and Renewable Energy Systems (LMRES)} \\
+    \textit{Hochschule München (HM) University of Applied Sciences}\\
+    Munich, Germany \\
+    niklas.monzen@hm.edu}
+}
+
+\maketitle 
+\thispagestyle{empty}
+
+% ============================================
+%         ABSTRACT and KEYWORDS
+% ============================================
+\begin{abstract}
+	This project is built to provide a template for writing papers and simulation.
+\end{abstract}
+
+\begin{IEEEkeywords}
+	Scuderia Ferrari, Apple, Joan Gilbert, Gibson, Fender, Hugo BOSS
+\end{IEEEkeywords}
+
+
+\section*{Notation}
+In this study, the following notation is used:
+
+\begin{itemize}
+    \item $\otimes$ denotes the Kronecker product \cite[Definition 7.1.2]{Bernstein:2009aa}.
+    \item $\mv x=[x_i]_{i\in[1,\cdots,n]}\in\R^n$ and $
+        \mm A
+        := 
+        [a_{ij}]
+        _{
+            i\in[1,\cdots,n],j\in[1,\cdots ,]
+        }\allowbreak\in\R^{n\times m}
+        $ denotes a vector and a matrix.
+    \item $\myrow_i(\mm A)$ denotes the $i\textsuperscript{th}$ row of the matrix $\mm A\in\R^{n\times m}$. 
+    \item $\myvec(\mm A):= [\myrow_1(\mm A^\top)  ,\cdots,\myrow_m(\mm A^\top)  ]^\top   $ for $\mm A\in\R^{n\times m}$.
+
+    \item $\lambda_\text{min}(\mm A)$ denotes the minimum eigenvalue of the matrix $\mm A\in\R^{n\times n}$.
+    \item $\mm I_n$ denotes the $n\times n$ identity matrix and $\mm 0_{n\times m}$ denotes the $n\times m$ zero matrix.
+\end{itemize}
+
+% ============================================
+%         SECTION: Introduction
+% ============================================
+\section{Introduction}
+
+This template is designed to provide a consistent format for writing papers and simulation reports.
+
+% ============================================
+%         SECTION: Example
+% ============================================
+\section{Example Section}
+
+% ============================================
+%            SECTION: Conclusion
+% ============================================
+\section{Conclusion}
+
+% ============================================
+%         BIBLIOGRAPHY
+% ============================================
+\bibliographystyle{ieeetr}
+\bibliography{\template/refs}
+
+\end{document}
+

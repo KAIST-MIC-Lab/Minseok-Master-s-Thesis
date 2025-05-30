@@ -1,0 +1,75 @@
+\documentclass{article}
+
+% ========================================
+%         Template Load
+% ========================================
+\def\pub{false} % true for publication, false for draft
+\newcommand*{\template}{../template}
+\input{\template/preamble/preamble_article.tex}
+
+
+% ========================================
+% LOCAL MACROS AND SYMBOLS
+% ========================================
+% \newcommand{cmd}{def}
+
+% ========================================
+%         TITLE and AUTHORS
+% ========================================
+\title{
+    Example Title of Document
+}
+
+\author{
+    Myeongseok Ryu
+    \thanks{Myeongseok Ryu and Kyunghwan Choi are with the School of Mechanical and Robotics Engineering, Gwangju Institute of Science and Technology, 61005 Gwangju, Republic of Korea {\tt\small dding\_98@gm.gist.ac.kr, khchoi@gist.ac.kr}}%
+    ,
+    Kyunghwan Choi
+    \footnotemark[1]
+}
+
+\date{
+    % 20\textsuperscript{th} March 2025
+    \today
+    \\
+    Version 0.0
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Who am I?
+\end{abstract}
+
+\tableofcontents
+
+% ========================================
+%         INTRODUCTION
+% ========================================
+\input{chapters/introduction.tex}
+
+Cite like \cite{Khalil:2002aa}.
+
+% ========================================
+%         SECTION
+% ========================================
+\input{chapters/section.tex}
+
+% ========================================
+%         Conclusion
+% ========================================
+\input{chapters/conclusion.tex}
+
+% ========================================
+%         Appendix
+% ========================================
+\begin{appendices}
+
+\end{appendices}
+
+\bibliographystyle{ieeetr}
+\bibliography{\template/refs}
+
+\end{document}
