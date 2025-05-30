@@ -4,3 +4,6 @@
 [submodule "template"]
 	path = template
 	url = https://github.com/KAIST-MIC-Lab/template
+[submodule "SafeRL"]
+	path = SafeRL
+	url = git@github.com:seominseok00/SafeRL.git
